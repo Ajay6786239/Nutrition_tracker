@@ -1,38 +1,75 @@
 .App {
   text-align: center;
+  padding: 20px;
+  background-image: url('https://img.freepik.com/premium-photo/fruits-black-background_569674-1568.jpg');
+  background-size: cover;
+  background-position: center;
+  height: fit-content;
 }
-
+.image a {
+  text-decoration: none;
+  color: #007bff; /* Link color */
+  font-weight: bold;
+}
+.one{
+  color:white;
+}
+.two{
+  color:#f9f9f9
+}
+.image a:hover {
+  text-decoration: underline;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-container {
+  margin: 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-field {
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  width: 300px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.results-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin-top: 20px;
+}
+
+.result-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.item-name {
+  color: #ff5722;
+}
+
+.error-message {
+  color: red;
 }
